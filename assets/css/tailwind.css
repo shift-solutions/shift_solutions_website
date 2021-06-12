@@ -1493,6 +1493,11 @@ p {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .md\:px-16 {
     padding-left: 3rem;
     padding-right: 3rem;
