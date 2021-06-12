@@ -115,19 +115,24 @@ p {
   @apply mb-4 text-5xl font-semibold text-secondary-900;
 }
 
-.services-title {
+.title-small {
+  line-height: 55px;
+  @apply mb-4 text-xl font-semibold text-secondary-900;
+}
+
+.about-title {
   @apply mb-2 text-2xl font-medium text-secondary-900;
 }
 
-.services-icon i {
+.about-icon i {
   font-size: 64px;
   @apply text-secondary;
 }
-.services-image {
-  @apply absolute top-0 right-0 flex items-center justify-center w-1/3 h-full mr-8;
+.about-image {
+  @apply absolute top-0 right-0 flex items-center justify-center md:w-1/4 h-full mr-8;
 }
 @media (max-width: 1024px) {
-  .services-image {
+  .about-image {
     @apply static w-full px-8 mt-10;
   }
   .call-action-image {
@@ -172,10 +177,10 @@ p {
 }
 
 .main-btn {
-  @apply inline-block px-8 py-4 font-bold text-basic duration-300 bg-primary rounded-full;
+  @apply inline-block px-8 py-4 font-bold text-basic duration-300 bg-secondary rounded-full;
 }
 .main-btn:hover {
-  @apply bg-primary-400;
+  @apply bg-secondary-400;
 }
 .bottom-shape {
   z-index: -1;
@@ -251,6 +256,85 @@ p {
 }
 
 .back-to-top {
-  @apply fixed bottom-0 right-0 z-20 flex items-center justify-center w-10 h-10 mb-8 mr-8 text-basic duration-300 bg-secondary rounded;
+  @apply fixed bottom-0 right-0 z-20 flex items-center justify-center w-10 h-10 mb-8 mr-8 text-secondary duration-300 bg-primary rounded;
 }
 
+.navbar-nav .nav-item a.force-text-secondary {
+  color: #5c5bfd;
+}
+
+.navbar-nav .nav-item.active a.force-text-secondary,
+.navbar-nav .nav-item a.force-text-secondary:hover {
+  color: #5DFBD7;
+}
+
+.quote-content {
+  border-left: 0.25rem solid #5c5bfd;
+}
+
+.services-bg {
+  z-index: 1;
+}
+
+.services-bg:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/logo-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .15;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.px-16 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-16 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.my-8 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.service-icon i {
+  font-size: 96px;
+  @apply text-basic;
+}
+
+.text-left {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .md\:px-16 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
