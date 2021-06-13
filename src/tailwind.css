@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700,800');
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,7 @@
 
 body {
   @apply text-secondary-900;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 p {
